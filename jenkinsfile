@@ -46,7 +46,7 @@ pipeline {
             }
         }
 
-        stage('Deployed Application') {
+        stage('Deployed') {
             steps {
                 sh '''
                     docker pull $IMAGE_NAME:latest
